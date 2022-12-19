@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#001f4d">
+  <title>OPC | PMWeb</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link rel="shortcut icon" href="./assets/images/logosupermini.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style media="screen">
+  ::selection {
+    background: #fff;
+    color: #000;
+  }
+</style>
+<body>
+  <audio src="" id="audio-source"></audio>
+  <div class="biglogoweb">
+    <img src="./assets/images/biglogoweb.png" height="60">
+  </div>
+  
+  
+  <div class="linesuperheight"></div>
+  <div class="noteheader">
+    <a>Learning Project (Beta)<br>Visit <a class="linkvisitheader" href="../">tophumy589.github.io</a></a>
+  </div>
+  <!--HOME SECTION-->
+  <section class="home-section">
+    <!--CAROUSEL-->
+    <div class="carausel">
+      <img src="assets/images/banner.jpg" class="active">
+      <!--<img src="assets/images/cover 2.png">
+      <img src="assets/images/cover 3.png">
+      <img src="assets/images/cover 4.png">
+      <img src="assets/images/cover 5.png">-->
+    </div>
+  </section>
+  
+<!--<div class="threecham">
+  <span><span1>abc</span1>● ● ●<span2></span2></span>
+</div>-->
+
+
+
+<div class="bxh">
+  <div class="colorbrttbxh">
+    <div class="ctnttbxh">
+    <div class="overlay"></div>
+    <h2 class="titlebxh">TOPTRENDING</h2>
+    <a class="timeBxh"></a>
+    <!--<a class="kbps">320</a>-->
+    
+    <!--<bottom class="playchart">Play Now</bottom>-->
+    </div>
+  </div>
+  <div class="listbxh">
+    
+    <!--<div class="a1">
+      <h2 class="nrank">1</h2>
+      <div class="zoneclick1">
+      <img src="./assets/images/cover 1.png" width="50" height="50">
+      <h2 class="musicname">abc<br><a class="fonSmall">def</a></h2>
+      </div>
+      
+    </div>-->
+    
+  </div>
+</div>
+
+  
+  <div class="linesuperheight"></div>
+  <!--PLAY LIST-->
+  <h1 class="heading">Zingchart Playlists</h1>
+  <div class="playlist-group">
+    
+  </div>
+  
+  <h1 class="heading">More</h1>
+  <div class="playlist-group playlist-group1">
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--mini player-->
+  
+      <input type="range" class="music-seek-bar1" value="0">
+      
+    
+  
+  <section class="music-player-section">
+ 
+<!--table lyric-->
+  <div class="tablelyric-ctn">
+   <!-- <div class="tablelyric">
+      <h3>Ai muon nghe khong</h3>
+      <h4>Den Vau</h4>
+      <a>alo alo alo Logvvv hggvv  tgh  ygbv <br>
+ggvfvgvvfcvv</a>
+      
+    </div>-->
+    <div class="tblyricback">
+      <img src="./assets/images/back2.png" width="30" height="30" class="tblyricbackbtn">
+    </div>
+  </div>
+    
+    
+    
+    <img hidden src="assets/images/back2.png" class="back-btn icon hide" width="21">
+    
+    <div class="imgbackctn">
+    <img src="" class="imgback" width="40" height="40" >
+    </div>
+      <style>
+        
+        .imgbackctn{
+          width: auto;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 10px 0 12px;
+        }
+        .music-player-section.active .imgbackctn{
+          display: none;
+        }
+        
+        .imgback{
+          
+          transition: 0.3s;
+          opacity: 1;
+          
+        }
+        .music-player-section.active .imgback{
+          display: none;
+          <!--position: absolute;
+          margin-top: -50px;
+          margin-left: 80px;
+          width: 80px;
+          height: 80px;
+          opacity: 0;
+          z-index: -2;
+          transition: 0s;-->
+        }
+      </style>
+  <div class="biccsa-ctn">
+    <img hidden src="assets/images/cover 9.png" class="bigcover hide">
+    <div class="shadowbigcover"></div>
+    <div class="csa-ctn">
+      <img hidden src="assets/images/cover 9.png" class="cover hide">
+      
+      <h1 class="current-song-name"></h1>
+      <p hidden class="artist-name hide"></p>
+    </div>
+  </div>
+  
+  
+  <!--<div class="lyricctn">
+    <a class="lyric"></a>
+  </div>-->
+  
+    
+  <div class="bigctrols-ctn">
+  <div class="controls-container">
+    <div class="seek-bar container">
+      <input hidden type="range" class="music-seek-bar hide" value="0">
+      <p hidden class="current-time hide">00:00</p>
+      <p hidden class="duration hide">00:00</p>
+    </div>
+    
+    
+    
+    <div class="controls">
+      
+      <div class="main">
+        <img src="./assets/images/repeatoff.png" class="repeatbtn" width="20" height="20">
+        <img src="./assets/images/repeaton.png" class="repeaton active" width="20" height="20">
+        
+      <div class="backwardbtn">
+        <!--<img src="./assets/images/backward.png" class="backbtnbxh" width="18" height="18">-->
+      </div>
+        
+        <img src="./assets/images/play.png" class="playbtnicon" width="55" height="55">
+        <img src="./assets/images/pause.png" class="pausebtnicon active" width="55" height="55">
+        
+      <div class="forwardbtn">
+        
+        <!--<img src="./assets/images/forward.png" class="forbtn1" width="18" height="18">-->
+        
+      </div>
+        
+        <img src="./assets/images/shuffleoff.png" class="shufflebtn" width="20" height="20">
+        <img src="./assets/images/shuffleon.png" class="shuffleon active" width="20" height="20">
+      </div>
+    
+      <!--<input type="range" class="volumn-slider" max="1" value="1" step="0.1">
+      <span class="fas fa-volume-up"></span>-->
+    </div>
+  </div> <!--controls-ctn-->
+  </div> <!--bigctrols-->
+    
+      </div>
+    <div class="menusc-ctn">
+    <div hidden class="menusection hide">
+      <!--<div class="lyriconoff">
+        <img src="assets/images/lyricon.png" width="39" class="lyricon" style="padding: 8px 8px">
+        <img src="assets/images/lyricoff.png" width="39" class="lyricoff active" style="padding: 8px 8px">
+      </div>-->
+      <div class="lyricimg">
+        <img src="assets/images/lyric.png" width="39" class="lyricbtn" style="padding: 8px 8px">
+      </div>
+      <div class="playlistimg">
+        <img src="assets/images/playlist.png" width="36" class="listbtn" style="padding: 8px 8px">
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <section class="playlist plistbxh">
+  
+  <div class="listmini">
+    
+    <div class="ctnheader">
+      <img src="./assets/images/top50.jpg" class="picminibxh">
+      <div class="imgtilctn">
+        <img src="./assets/images/top50.jpg" class="pictrong" width="131" height="131">
+        <div class="liheightti">
+          <h1 class="titlealbum"></h1>
+          <a class="infpl"></a>
+        </div>
+      </div>
+    </div>
+    
+    <!--<div class="btplaylistctn">
+      <div class="btplaynor">
+        <a>play1</a>
+      </div>
+      <div class="btplayrd">
+        <a>play2</a>
+      </div>
+    </div>-->
+    
+    
+    <div class="mnplistctn">
+  <!--<div class="ctnzone b1">
+      <h4 class="stt">1</h4>
+      <div class="zonelickmn b1">
+        <img src="./assets/images/cover 5.png" width="48" height="48">
+        <h2 class="namesongbxh"> vaicaunoicokhiennguoithaydoi<br><a class="nameartist">bdhd</a></h2>
+        
+      </div>
+      </div>-->
+      
+    </div>
+  </div>
+  
+  <div class="backlistctn">
+    <div class="backlist">
+      
+      <img src ="./assets/images/minibacklist.png" class="iconbacklist" width="18"></img>
+    </div>
+  </div>
+  
+  <a class="checkjs"></a>
+  
+  </section>
+  
+  <!--FOOTER-->
+  <div class="footer-ctn">
+    
+    <img src="">
+    <h2 class="titlecontact">
+      CONTACT
+    </h2>
+    <a class="mail"><i class="fa-solid fa-envelope"></i> contact.6688ofi@gmail.com</a>
+    <h2 class="titleabout">
+      ABOUT
+    </h2>
+    <a class="contentabout">
+      Music & Picture :<br>ZingMp3 & Some Other
+    </a>
+    <!--ảnh thanks for visit-->
+      <div class="logofooter-ctn"><img src="./assets/images/logofooter.png" class="logofooter"></div>
+    <p class="ver">Version BETA</p>
+    <h4 class="copyright">©2022 OP Cloud<br>Made By To Phu My</h4>
+    
+  </div>
+  
+  
+  
+  <script src="../app.js"></script>
+  
+</body>
+</html>
